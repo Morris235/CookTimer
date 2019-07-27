@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "752586472828",
+    "firebase_url": "https://cooktimer-25afd.firebaseio.com",
+    "project_id": "cooktimer-25afd",
+    "storage_bucket": "cooktimer-25afd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752586472828:android:dadd0c527ade2bb4",
+        "android_client_info": {
+          "package_name": "com.example.cooktimer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752586472828-7ju9k54u6ovlpi26ab23471ov3td3gl8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cooktimer",
+            "certificate_hash": "248f535a7267fbf03984b2db8d55b662b7ba5ca0"
+          }
+        },
+        {
+          "client_id": "752586472828-u8f34tugpiae2ooud8uo0vad5va6kb2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYwdH5BPi3CItp9Mbz5tmpXsPrWqVaF6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752586472828-u8f34tugpiae2ooud8uo0vad5va6kb2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

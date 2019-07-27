@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cooktimer">
+    <!-- camera, gallery -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".PassWordFinder" />
+        <activity android:name=".SignUpPage" />
+        <activity android:name=".LoginPage" />
+        <activity android:name=".MakingAlarmSpinner" />
+        <activity android:name=".Bookmark_Alarm_List_Logout" />
+        <activity android:name=".Custom_Alarm_List_Logout" />
+        <activity android:name=".Bookmark_Alarm_List_Login" />
+        <activity
+            android:name=".MakingAlarmPopup"
+            android:theme="@style/PopupTheme" />
+        <activity
+            android:name=".TransparencyAct"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name=".Custom_Alarm_List_Login" />
+        <activity android:name=".StartTimers" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoadingPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="AlarmReceiver" />
+            </intent-filter>
+        </receiver> <!-- 사진 촬영 provider. provideauthorities 값은 '패키지명.provider' 로 설정 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.cooktimer.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
